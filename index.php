@@ -98,7 +98,7 @@ while($row = $c_qry->fetch_assoc()){
             <div id="about_me"><?php include "about.html"; ?></div>
          </div>
       </div>
-   </section>   
+   </section>
    <section id="clients" style="padding-top:5rem; background: #eaeaea;">
       <div class="row">
          <div class="twelve columns collapsed">
@@ -146,7 +146,7 @@ while($row = $c_qry->fetch_assoc()){
       <div class="text-container">
          <div class="row">
             <div class="two columns header-col">
-               <h1><span>Отзывы</span></h1>
+               <h1>Отзывы</h1>
             </div>
             <div class="ten columns flex-container">
                <div class="flexslider">
@@ -190,8 +190,8 @@ while($row = $c_qry->fetch_assoc()){
                         <input type="email" class="form-control" id="email" name="email" required value="<?php echo isset($_POST['email']) ? $_POST['email'] : "" ?>">
                      </div>
                      <div class="form-group">
-                        <label for="contact_no" class="control-label text-light">Контактные данные</label>
-                        <input type="text" class="form-control" id="contact_no" name="contact" required value="<?php echo isset($_POST['contact']) ? $_POST['contact'] : "" ?>">
+                        <label for="contact_no" class="control-label text-light">Телефон</label>
+                        <input type="text" class="form-control" id="contact_no" name="contact" pattern="\+?[0-9]+" title="Введите только положительные целые цифры" required value="<?php echo isset($_POST['contact']) ? $_POST['contact'] : "" ?>">
                      </div>
                      <div class="form-group">
                         <label for="subject" class="control-label text-light">Тема</label>
@@ -207,10 +207,10 @@ while($row = $c_qry->fetch_assoc()){
                </div>
                <div class='text-center'>
                   <?php if(isset($msg_status) && $msg_status =='success'): ?>
-                     <span class="text-success">Message Successfully Sent.</span>
+                     <script>alert('Ваше сообщение успешно отправлено!')</script>
                   <?php elseif(isset($msg_status) && $msg_status =='failed'): ?>
-                     <span class="text-success">Message Sending Failed.</span>
-                     <?php endif; ?>
+                     <script>alert('Ваше сообщение не отправлено!')</script>
+                  <?php endif; ?>
                </div>
                <div class="center">
                   <button class="btn btn-primary">Отправить</button>
@@ -232,6 +232,6 @@ while($row = $c_qry->fetch_assoc()){
       <div class="chatbot__tooltip d-none">Есть вопрос?</div>
    </div>
    <script src="/chatbot/chatbot_script.js" defer>
-   </script>
+   </script>   
 </body>
 </html>

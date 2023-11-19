@@ -27,9 +27,9 @@
 				<thead>
 					<tr>
 						<th class="text-center">#</th>
-						<th>Created_at</th>
-						<th>Price</th>
-						<th>Action</th>
+						<th>Дата</th>
+						<th>Количество проданного товара</th>
+						<th>Действия</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -39,7 +39,7 @@
 					while($row= $qry->fetch_assoc()):
 					?>
 					<tr>
-						<th class="text-center"><?php echo $i++ ?></th>						
+						<th class="text-center"><?php echo $i++ ?></th>
 						<td><b class=""><?php echo date("Y-m-d", strtotime($row['created_at'])) ?></b></td>
 						<td><b class=""><?php echo number_format($row['price'], 0, '', '') ?></b></td>
 						<td class="text-center">

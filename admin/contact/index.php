@@ -24,7 +24,7 @@
 			                    <div class="input-group-prepend">
 			                      <span class="input-group-text"><i class="fa fa-phone"></i></span>
 			                    </div>
-			                    <input type="text" name="mobile" class="form-control" value="<?php echo isset($meta['mobile']) ? $meta['mobile'] : '' ?>">
+			                    <input type="text" name="mobile" class="form-control" pattern="\+?[0-9]+" title="Введите только положительные целые цифры" required value="<?php echo isset($meta['mobile']) ? $meta['mobile'] : '' ?>">
 		                	</div>
 						</div>
 						<div class="form-group">
@@ -43,15 +43,6 @@
 			                      <span class="input-group-text"><i class="fa fa-facebook"></i></span>
 			                    </div>
 			                    <input type="text" class="form-control" name="facebook" value="<?php echo isset($meta['facebook']) ? $meta['facebook'] : '' ?>">
-		                	</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="control-label">Twitter Link</label>
-							<div class="input-group">
-			                    <div class="input-group-prepend">
-			                      <span class="input-group-text"><i class="fa fa-twitter"></i></span>
-			                    </div>
-			                    <input type="text" class="form-control" name="twitter" value="<?php echo isset($meta['twiter']) ? $meta['twiter'] : '' ?>">
 		                	</div>
 						</div>
 						<div class="form-group">

@@ -16,7 +16,6 @@ function redirect($url=''){
 }
 function validate_image($file){
 	if(!empty($file)){
-			// exit;
 		if(is_file(base_app.$file)){
 			return base_url.$file;
 		}else{

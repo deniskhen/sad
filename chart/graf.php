@@ -66,7 +66,8 @@ if (isset($_GET['get_months'])) {
       justify-content: center;
    }
    #myChart {
-      width: 80vw;
+      display: none;
+      width: 50vw;
    }
    #myTable {
       border-collapse: collapse;
@@ -153,7 +154,7 @@ if (isset($_GET['get_months'])) {
          const data = {
             labels: labels.split(',').sort(((a,b)=>a-b)).map(month => months[parseInt(month) - 1]),
             datasets: [{
-               label: 'Данные анализа',
+               label: 'Количество проданного товара',
                backgroundColor: [
                   '#FF0000',
                   '#FF1493',
@@ -223,7 +224,7 @@ if (isset($_GET['get_months'])) {
          const th1 = document.createElement('th');
          th1.textContent = 'Месяц';
          const th2 = document.createElement('th');
-         th2.textContent = 'Количество';
+         th2.textContent = 'Количество проданных товаров';
          tr.appendChild(th1);
          tr.appendChild(th2);
          thead.appendChild(tr);
