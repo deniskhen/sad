@@ -232,6 +232,6 @@ while($row = $c_qry->fetch_assoc()){
       <div class="chatbot__tooltip d-none">Есть вопрос?</div>
    </div>
    <script src="/chatbot/chatbot_script.js" defer>
-   </script>   
+   </script>
 </body>
 </html>

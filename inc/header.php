@@ -15,7 +15,7 @@
 
   <script src="/profile_asset/js/modernizr.js"></script>
   <script src="/chatbot/fp2.js"></script>
-  <script src="/chatbot/chatbot.js"></script>  
+  <script src="/chatbot/chatbot.js"></script>
 
   <style>
     .col-lg-12{
