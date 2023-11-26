@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Ноя 05 2023 г., 17:07
+-- Время создания: Ноя 26 2023 г., 16:28
 -- Версия сервера: 8.0.30
 -- Версия PHP: 8.1.9
 
@@ -40,28 +40,7 @@ CREATE TABLE `chatbot_messages` (
 --
 
 INSERT INTO `chatbot_messages` (`id`, `client_id`, `message_type`, `message_content`, `date_time`) VALUES
-(2, '36b4fa271e8b31430056c530cfe103aa', 'botvbn', 'Я бот поддержки сайта', '2023-11-05 08:34:33'),
-(3, '36b4fa271e8b31430056c530cfe103aa', 'human', 'Салют!', '2023-11-05 08:34:33'),
-(4, '36b4fa271e8b31430056c530cfe103aa', 'bot', 'Как мне к Вам обращаться?vcv', '2023-11-05 08:34:37'),
-(5, '36b4fa271e8b31430056c530cfe103aa', 'human', 'gdfgdf', '2023-11-05 08:34:37'),
-(6, '36b4fa271e8b31430056c530cfe103aa', 'bot', 'gdfgdf, что Вас интересует?', '2023-11-05 08:34:39'),
-(7, '36b4fa271e8b31430056c530cfe103aa', 'human', 'Меня интересует, как я могу использовать этот чат-бот у себя на сайте', '2023-11-05 08:34:39'),
-(8, '36b4fa271e8b31430056c530cfe103aa', 'bot', 'gdfgdf, для этого прочитайте эту инструкцию по использованию. Она содержит подробную информацию по использованию этого чат-бота.', '2023-11-05 08:34:44'),
-(9, '36b4fa271e8b31430056c530cfe103aa', 'human', 'В начало', '2023-11-05 08:34:44'),
-(10, '8e138c01481ff03e6579da68016c95da', 'bot', 'Привет!', '2023-11-05 09:12:50'),
-(11, '8e138c01481ff03e6579da68016c95da', 'bot', 'Я бот поддержки сайта', '2023-11-05 09:12:50'),
-(12, '8e138c01481ff03e6579da68016c95da', 'human', 'Салют!', '2023-11-05 09:12:50'),
-(13, '8e138c01481ff03e6579da68016c95da', 'bot', 'Как мне к Вам обращаться?', '2023-11-05 09:12:53'),
-(14, '8e138c01481ff03e6579da68016c95da', 'human', 'gdfgdf', '2023-11-05 09:12:53'),
-(15, '8e138c01481ff03e6579da68016c95da', 'bot', 'gdfgdf, что Вас интересует?', '2023-11-05 09:12:55'),
-(16, '8e138c01481ff03e6579da68016c95da', 'human', 'Хочу оставить запрос разработчику чат-бота', '2023-11-05 09:12:55'),
-(17, '8e138c01481ff03e6579da68016c95da', 'bot', 'gdfgdf, какой у Вас вопрос?', '2023-11-05 09:12:58'),
-(18, '8e138c01481ff03e6579da68016c95da', 'human', 'gdfgdf', '2023-11-05 09:12:58'),
-(19, '8e138c01481ff03e6579da68016c95da', 'bot', 'gdfgdf, мы получили Ваш вопрос! Скажите, как с Вами удобнее будет связаться?', '2023-11-05 09:13:00'),
-(20, '8e138c01481ff03e6579da68016c95da', 'human', 'по email', '2023-11-05 09:13:00'),
-(21, '8e138c01481ff03e6579da68016c95da', 'bot', 'gdfgdf, укажите пожалуйста ваш Email ниже', '2023-11-05 09:13:03'),
-(22, '8e138c01481ff03e6579da68016c95da', 'human', 'gdfgdfg', '2023-11-05 09:13:03'),
-(23, '8e138c01481ff03e6579da68016c95da', 'botvbnvb', 'Готово! gdfgdf, мы свяжемся с вами в ближайшее время по gdfgdfg. Всего хорошего!', '2023-11-05 09:13:05');
+(44, '8e138c01481ff03e6579da68016c95da', 'human', 'Привет! Я рад с тобой познакомиться', '2023-11-15 22:19:31');
 
 -- --------------------------------------------------------
 
@@ -104,12 +83,11 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`meta_field`, `meta_value`) VALUES
-('mobile', '9065438386'),
+('mobile', '89065554433'),
 ('email', 'denis.khen79@mail.ru'),
 ('facebook', 'https://facebook.com'),
-('twitter', ''),
 ('linkin', 'https://linkedin.com'),
-('address', '');
+('address', 'Russia, Рязань');
 
 -- --------------------------------------------------------
 
@@ -134,7 +112,7 @@ CREATE TABLE `messages` (
 --
 
 INSERT INTO `messages` (`id`, `full_name`, `subject`, `contact`, `email`, `message`, `status`, `date_created`, `date_updated`) VALUES
-(5, 'nvbn', 'nvbn', 'nvbn', 'nvbn@fdfdf', 'nvbnbv', 0, '2023-10-14 18:10:38', NULL);
+(45, 'gdfg', 'tdft', '435345', 'gdfg@dsaa', 'tr', 0, '2023-11-19 00:51:14', NULL);
 
 -- --------------------------------------------------------
 
@@ -393,7 +371,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `chatbot_messages`
 --
 ALTER TABLE `chatbot_messages`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT для таблицы `clients`
@@ -405,7 +383,7 @@ ALTER TABLE `clients`
 -- AUTO_INCREMENT для таблицы `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT для таблицы `orders`
